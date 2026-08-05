@@ -254,7 +254,6 @@ Now you're ready to use Azure Speech to implement text translation.
    # Configure speech for synthesis of translations
    speech_cfg = speech_sdk.SpeechConfig(
         token_credential=credential, endpoint=foundry_endpoint)
-   audio_out_cfg = speech_sdk.audio.AudioOutputConfig(use_default_speaker=True)
    voices = {
         "fr": "fr-FR-HenriNeural",
         "es": "es-ES-ElviraNeural",
