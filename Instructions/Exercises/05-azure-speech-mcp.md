@@ -155,6 +155,9 @@ Now let's test the agent's ability to use the tool you connected.
 1. If prompted, approve use of the Azure Speech tool by selecting **Always approve all Azure Speech MCP Server tools**.
 
     > **Note**: If a transient error occurs while calling the tool, refresh the page and retry the same prompt.
+
+    > **Note**: You may see a message stating that the interaction was blocked by a Foundry guardrail. This happens because Foundry's built-in content safety checks flag the transcribed content of `speech_1.wav`. If this occurs, retry the prompt using `speech_2.wav` instead, which is not affected.
+    
 1. Review the output, which should be a transcription of the audio file.
 
 ## Create a client application
